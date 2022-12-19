@@ -1,0 +1,72 @@
+body {
+  margin: 0px 200px;
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+}
+h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  margin: 30px 50px;
+  padding: 15px;
+  border: 3px solid #0487eb;
+  border-radius: 40%;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.rain-image {
+  color: #fff;
+  position: relative;
+  top: 17px;
+  left: 300px;
+  font-size: 100px;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+  margin: 25px;
+}
+li {
+  position: relative;
+  top: -10px;
+  right: 58px;
+}
+.temperature {
+  font-size: 40px;
+}
+
+.temperature-convertion {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  top: -14px;
+}
+.card {
+  text-align: center;
+  margin: 20px;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+h6 {
+  font-size: 50px;
+}
+.input-group {
+  padding: 45px;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  padding: 50px auto;
+}

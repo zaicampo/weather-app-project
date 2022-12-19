@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/1041b0785f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="src/index.js"></script>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="row">
+        <div class="col-6">
+          <i class="fa-solid fa-cloud-rain rain-image"></i>
+        </div>
+        <div class="col-6">
+          <h2 id="city-selection">Bogotá D.C.</h2>
+
+          <ul>
+            <li id="current-day">Date</li>
+            <li class="temperature">
+              <span id="current-temperature">19</span>
+              <span class="temperature-convertion">
+                <a href="#" id="celsius"> °C </a> |
+                <a href="#" id="fahrenheit"> °F </a>
+              </span>
+            </li>
+            <li id="weather-description">Rain</li>
+            <li>
+              Min <span id="min-temperature">4</span>°C - Max
+              <span id="max-temperature">17</span>°C
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <h6 class="card-subtitle mb-2 text-muted">🌥</h6>
+              <p class="card-text">Min 9º - Max 18º</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <h6 class="card-subtitle mb-2 text-muted">🌥</h6>
+              <p class="card-text">Min 9º - Max 17º</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <h6 class="card-subtitle mb-2 text-muted">🌤</h6>
+              <p class="card-text">Min 9º - Max 19º</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <h6 class="card-subtitle mb-2 text-muted">☀️</h6>
+              <p class="card-text">Min 9º - Max 20º</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="input-group" id="city-form">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              placeholder="Enter your city"
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              id="location-button"
+            >
+              Current Location 🕹️
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
